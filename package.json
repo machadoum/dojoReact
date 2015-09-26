@@ -1,8 +1,8 @@
 {
-  "name": "webpack-starter",
-  "version": "1.0.0",
-  "description": "Bare bones webpack project with a node express server",
-  "main": "server/index.js",
+  "name": "dojoReact",
+  "version": "0.0.1",
+  "description": "Dojo de react",
+  "main": "index.js",
   "scripts": {
     "dev-server": "nodemon server/index.js --watch server",
     "dev-web": "webpack-dev-server --config ./webpack-dev.config.js --hot --progress --colors --content-base build",
@@ -12,9 +12,8 @@
     "test": "karma start",
     "testing": "karma start --single-run=false"
   },
-  "repository": "git@github.com:cgreening/webpack-starter.git",
-  "author": "Chris Greening",
-  "license": "MIT",
+  "repository": "CRIAR",
+  "author": "Pablito",
   "dependencies": {
     "compression": "^1.5.0",
     "cors": "^2.7.1",

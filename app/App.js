@@ -10,14 +10,13 @@ var Olar =    require('./Components/Olar');
 
 
 module.exports = React.createClass({
-  displayName: 'App',
-
   render: function () {
-    return (<div>
-              <Header/>
-              <Olar />
-              <Favicon url={ faviconUrl }/>
-            </div>)
-  }
+    return (
+      <div>
+        <Header/>
+        <Olar />
+        <Favicon url={ faviconUrl }/>
+      </div>
+    )}
 
 });
