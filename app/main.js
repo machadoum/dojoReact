@@ -1,7 +1,7 @@
-require("./Assets/style.scss")
+import "./Assets/style.scss"
+import 'normalize.css/normalize.css'
 
-var React = require('react');
+import React from 'react'
+import App from './App.js'
 
-var App = require('./App.js');
-
-React.render(<App/>, document.getElementById('app'))
+React.render(<App/>, document.getElementById('appMountPoint'))

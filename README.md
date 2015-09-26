@@ -1,5 +1,5 @@
 # dojoReact
-Boilerplate incial para o desenvolvimento de um coding dojo
+Boilerplate inicial para o desenvolvimento de um coding dojo
 
 
 Estrutura inicial retirada de:
