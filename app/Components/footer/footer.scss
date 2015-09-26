@@ -1,0 +1,12 @@
+.footer {
+  position: absolute;
+  bottom: 2vh;
+  width: 100%;
+  text-align: center;
+
+  .footer_previous,
+  .footer__pageNumber,
+  .footer__next {
+    padding: 10px;
+  }
+}
