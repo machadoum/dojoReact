@@ -4,9 +4,16 @@
   width: 100%;
   text-align: center;
 
-  .footer_previous,
-  .footer__pageNumber,
-  .footer__next {
+  &__previous,
+  &__next,
+  &__pageNumber {
     padding: 10px;
+  }
+
+  &__previous,
+  &__next {
+    background: none;
+    border: 0;
+    outline: 0;
   }
 }

@@ -1,9 +1,7 @@
 import React from 'react';
-
 import './slide.scss'
 
 var Slide = React.createClass({
-
   propTypes: {
     title: React.PropTypes.string
   },
@@ -11,7 +9,7 @@ var Slide = React.createClass({
   render() {
     return (
       <div className='slide'>
-        <div className='title'>
+        <div className='slide__title'>
           { this.props.title }
         </div>
       </div>

@@ -1,9 +1,7 @@
 import React from 'react';
-
 import './footer.scss'
 
 var Footer = React.createClass({
-
   propTypes: {
     currentSlide: React.PropTypes.number,
     totalSlides: React.PropTypes.number,
@@ -14,7 +12,7 @@ var Footer = React.createClass({
   render() {
     return (
       <div className='footer'>
-        <button className='footer_previous' onClick={this.props.onPrevious}>
+        <button className='footer__previous' onClick={this.props.onPrevious}>
           { '<' }
         </button>
         <span className='footer__pageNumber'>

@@ -1,16 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-
 .slide {
   background-color: #AAAAFF;
   height: 100%;
 
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-
   display: flex;
   align-items: center;
 
-  .title {
+  &__title {
     width: 100%;
     text-align: center;
     font-size: 15vh;
