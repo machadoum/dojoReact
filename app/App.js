@@ -12,9 +12,9 @@ module.exports = React.createClass({
     return (
       <div className='app'>
         <Deck>
-          <Slide title='Meu Primeiro Slide' />
-          <Slide title='Meu Segundo Slide' />
-          <Slide title='Meu Terceiro Slide' />
+          <Slide key='slide1' title='Meu Primeiro Slide' />
+          <Slide key='slide2' title='Meu Segundo Slide' />
+          <Slide key='slide3' title='Meu Terceiro Slide' />
         </Deck>
         <Favicon url={ faviconUrl } />
       </div>

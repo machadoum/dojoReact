@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react/addons'
 import './deck.scss'
 
 import Footer from '../Footer'
-
+var CSSTransitionGroup = React.addons.CSSTransitionGroup
 var Deck = React.createClass({
   getInitialState() {
     return {
@@ -20,7 +20,9 @@ var Deck = React.createClass({
 
     return (
       <div className='deck'>
-        { this.props.children[this.state.current - 1] }
+        <CSSTransitionGroup transitionName="deck__transition">
+          { this.props.children[this.state.current - 1] }
+        </CSSTransitionGroup>
         <Footer {...footerProps}  />
       </div>
     );

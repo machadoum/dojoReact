@@ -1,3 +1,31 @@
 .deck {
-  height:100%; 
+  height:100%;
+
+  .deck__transition-enter {
+    height: 0%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
+
+  .deck__transition-enter.deck__transition-enter-active {
+    height: 100%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
+
+  .deck__transition-leave {
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
+
+  .deck__transition-leave.deck__transition-leave-active {
+    opacity: 0.5;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
 }
