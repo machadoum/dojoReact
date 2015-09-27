@@ -3,27 +3,47 @@ import './footer.scss'
 
 var Footer = React.createClass({
   propTypes: {
-    currentSlide: React.PropTypes.number,
-    totalSlides: React.PropTypes.number,
+    current: React.PropTypes.number,
+    total: React.PropTypes.number,
     onNext: React.PropTypes.func,
     onPrevious: React.PropTypes.func,
   },
 
   render() {
     return (
-      <div className='footer'>
-        <button className='footer__previous' onClick={this.props.onPrevious}>
-          { '<' }
-        </button>
-        <span className='footer__pageNumber'>
-          { this.props.currentSlide } / { this.props.totalSlides }
+      <div className='footer' >
+        {this.renderPreviousButton()}
+        <span className='footer__pageNumber' >
+          { this.props.current } / { this.props.total }
         </span>
-        <button className='footer__next' onClick={this.props.onNext}>
-          { '>' }
-        </button>
+        {this.renderNextButton()}
       </div>
     );
-  }
+  },
+
+  renderPreviousButton() {
+    return (
+      <button disabled={this.isPreviousDisabled()} onClick={this.props.onPrevious} className='footer__btn' >
+        { '<' }
+      </button>
+    )
+  },
+
+  renderNextButton() {
+    return (
+      <button disabled={this.isNextDisabled()} onClick={this.props.onNext} className='footer__btn' >
+        { '>' }
+      </button>
+    )
+  },
+
+  isPreviousDisabled() {
+    return this.props.current == 1;
+  },
+
+  isNextDisabled() {
+    return this.props.current == this.props.total;
+  },
 });
 
 module.exports = Footer;

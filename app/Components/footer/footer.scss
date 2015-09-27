@@ -4,14 +4,16 @@
   width: 100%;
   text-align: center;
 
-  &__previous,
-  &__next,
+  [disabled] {
+    visibility: hidden;
+  }
+
+  &__btn,
   &__pageNumber {
     padding: 10px;
   }
 
-  &__previous,
-  &__next {
+  &__btn {
     background: none;
     border: 0;
     outline: 0;
