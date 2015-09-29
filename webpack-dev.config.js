@@ -12,7 +12,7 @@ var devLoaders = [
 module.exports = {
   entry: [
   // setup the hot mobule loading
-  'webpack-dev-server/client?http://localhost:8080',
+  'webpack-dev-server/client?http://localhost:3000',
   'webpack/hot/only-dev-server',
   // our entry file
   './app/main.js'
@@ -23,10 +23,7 @@ module.exports = {
   },
   devtool: 'eval',
   devServer: {
-    // proxy calls to api to our own node server backend
-    proxy: {
-      '/api/*': 'http://localhost:5000/'
-    }
+  
   },
   module: {
     loaders: commonConfig.loaders.concat(devLoaders)
