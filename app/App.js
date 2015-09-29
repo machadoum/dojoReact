@@ -1,6 +1,8 @@
 import React from 'react'
 
 import faviconUrl from './Assets/favicon.ico'
+import component_JSXUrl from './Assets/component_with_jsx.png'
+import componentURL from './Assets/component_without_jsx.png'
 import Favicon from 'react-favicon'
 
 import Deck from './Components/Deck'
@@ -23,11 +25,11 @@ module.exports = React.createClass({
           </Slide>
           <Slide key='slide3'>
             <Title text='Component'/>
-            <span>img?</span>
+            <img src={ componentURL }/>
           </Slide>
           <Slide key='slide4'>
             <Title text='JSX'/>
-            <span>img?</span>
+            <img src={ component_JSXUrl }/>
           </Slide>
           <Slide key='slide5'>
             <Title text='Lifecycle'/>
